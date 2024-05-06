@@ -12,7 +12,7 @@ const Navigationbar = () => {
         <nav>
             <div className="left">
                 <a href="/" className="logo">
-                    <img src="./MainLogo.png" alt="" />
+                    <img src="./logo.png" alt="" />
                     <span>Crestview Cornerstone</span>
                 </a>
                 <a href="/">Home</a>
