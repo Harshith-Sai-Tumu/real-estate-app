@@ -2,6 +2,7 @@ import "./list.scss"
 import { listData } from "../../libraries/dummyData"
 import Filter from "../../components/filter/Filter"
 import Card from "../../components/card/Card"
+import Map from "../../components/map/Map"
 const List =()=>{
 
     const data = listData
@@ -17,7 +18,7 @@ const List =()=>{
             </div>
           </div>
           <div className="mapcontainer">
-            Map
+            <Map/>
           </div>
         </div>
     )
