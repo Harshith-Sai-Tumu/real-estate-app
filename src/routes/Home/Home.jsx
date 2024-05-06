@@ -7,9 +7,9 @@ const Home = ()=>{
           <div className="text">
             <div className="wrap">
                 <h1 className="title">
-                   Seeking Your Dream Space? Real Estate Offers Abound!
+                Find Your Dream Property Today with Crestview Cornerstone!
                </h1>
-               <p>
+               <p className="tc">
                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, pariatur? Praesentium voluptate quas ipsam atque dolor architecto ipsa possimus, sunt accusantium! Veniam ipsa dolor nihil quis reiciendis incidunt tenetur sunt! 
                </p>
                <SearchBar/>
