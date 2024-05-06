@@ -1,19 +1,32 @@
 import Navigationbar from "./components/Navbar/Navigationbar"
-import "./layout.scss"
+
 import Home from "./routes/Home/Home"
+import { createBrowserRouter,RouterProvider } from "react-router-dom"
+import List from "./routes/list/List"
+import Layout from "./routes/layout/Layout"
 
 function App() {
-  return (
-    <div className="layout">
-         
-       <div className="navbar">
-          <Navigationbar/>
-       </div>
-       <div className="home">
-          <Home/>
-       </div>
-       
-    </div>
+
+
+   const router = createBrowserRouter([
+   {
+      path:"/",
+      element: <Layout/>,
+      children:[
+         {
+            path:"/",
+            element:<Home/>
+         },
+         {
+            path:"/List",
+            element:<List/>
+         }
+      ]
+   }
+   ])
+  return ( 
+
+   <RouterProvider router={router}/>
   )
 }
 
