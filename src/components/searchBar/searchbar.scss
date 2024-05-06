@@ -2,10 +2,14 @@
 
 .searchBar{
     .type{
+        @include sm{
+            margin-bottom: 5px;
+        }
         button{
             padding: 16px 36px;
             border: 1px solid black;
             border-bottom: none;
+            
             cursor: pointer;
             background-color: white;
             text-transform: capitalize;
@@ -18,10 +22,16 @@
             &:first-child{
                 border-top-left-radius: 10px;
                 border-right: 0;
+                @include sm{
+                    border-bottom:1px solid black ;
+                }
             }
             &:last-child{
                 border-top-right-radius: 10px;
                 border-left: 0;
+                @include sm{
+                    border-bottom:1px solid black ;
+                }
             }
         }
     }
@@ -32,6 +42,11 @@
         justify-content: space-between;
         height: 64px;
         gap: 5px;
+         
+        @include sm{
+            flex-direction: column;
+            border: none;
+        }
 
         input{
             border: none;
@@ -40,14 +55,34 @@
 
             @include lg{
                 padding: 0px 5px;
-                width: 140px;
+                &:nth-child(2),&:nth-child(3){
+                    width: 140px;
+                }
+            }
+            @include md{
+                 width: 200px;
+                &:nth-child(2),&:nth-child(3){
+                    width: 200px;
+                }
+            }
+
+            @include sm{
+                width: auto;
+                &:nth-child(2),&:nth-child(3){
+                    width: auto;
+                }
+                padding: 20px;
+                border-bottom: 1px solid black;
             }
         }
         button{
             border: none;
             background-color: skyblue;
             flex:1;
-
+             
+            @include sm{
+                padding: 10px;
+            }
             img{
                 width: 26px;
                 height: 26px;
