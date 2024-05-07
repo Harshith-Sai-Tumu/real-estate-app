@@ -18,7 +18,7 @@ const List =()=>{
             </div>
           </div>
           <div className="mapcontainer">
-            <Map/>
+            <Map items={data}/>
           </div>
         </div>
     )
