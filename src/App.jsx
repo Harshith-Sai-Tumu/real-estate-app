@@ -5,6 +5,7 @@ import { createBrowserRouter,RouterProvider } from "react-router-dom"
 import List from "./routes/list/List"
 import Layout from "./routes/layout/Layout"
 import SinglePage from "./routes/singlePage/SinglePage"
+import Profile from "./routes/profile/Profile"
 
 function App() {
 
@@ -25,6 +26,11 @@ function App() {
          {
             path:"/:id",
             element:<SinglePage/>
+         },
+         {
+            path:"/profile",
+            element:<Profile/>
+
          }
       ]
    }
