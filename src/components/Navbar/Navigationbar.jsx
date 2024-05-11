@@ -8,18 +8,18 @@ const Navigationbar = () => {
   const toggleMenu = () => {
     setOpen((prevOpen) => !prevOpen);
   };
-  const user = true;
+  const user = false;
   return (
     <nav>
       <div className="left">
-        <Link to="/" className="logo">
+        <a href="/" className="logo">
           <img src="./logo.png" alt="" />
           <span>Crestview Cornerstone</span>
-        </Link>
+        </a>
         <Link to="/">Home</Link>
-        <Link to="/">About</Link>
-        <Link to="/">Contact</Link>
-        <Link to="/">Agents</Link>
+        <a href="/">About</a>
+        <a href="/">Contact</a>
+        <a href="/">Agents</a>
       </div>
       <div className="right">
         {user ? (
@@ -37,7 +37,7 @@ const Navigationbar = () => {
         ) : (
           <>
             <Link to="/login">Sign in</Link>
-            <Link a="/register" className="register">
+            <Link to="/register" className="reg">
               Sign up
             </Link>
           </>
@@ -47,9 +47,9 @@ const Navigationbar = () => {
         </div>
         <div className={open ? "menu active" : "menu"}>
           <Link to="/">Home</Link>
-          <Link to="/">About</Link>
-          <Link to="/">Contact</Link>
-          <Link to="/">Agents</Link>
+          <a href="/">About</a>
+          <a href="/">Contact</a>
+          <a href="/">Agents</a>
           <Link to="/login">Sign in</Link>
           <Link to="/register">Sign up</Link>
         </div>
