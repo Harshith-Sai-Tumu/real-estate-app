@@ -12,14 +12,14 @@ const Navigationbar = () => {
   return (
     <nav>
       <div className="left">
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           <img src="./logo.png" alt="" />
           <span>Crestview Cornerstone</span>
-        </a>
+        </Link>
         <Link to="/">Home</Link>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
-        <a href="/">Agents</a>
+        <Link to="/">About</Link>
+        <Link to="/">Contact</Link>
+        <Link to="/">Agents</Link>
       </div>
       <div className="right">
         {user ? (
