@@ -1,7 +1,7 @@
 import "./register.scss";
 import { Link } from "react-router-dom";
 
-function Register() {
+const Register = () => {
   return (
     <div className="register">
       <div className="formContainer">
@@ -19,6 +19,6 @@ function Register() {
       </div>
     </div>
   );
-}
+};
 
 export default Register;
